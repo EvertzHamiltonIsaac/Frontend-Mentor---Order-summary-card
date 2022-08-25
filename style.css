@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+--White: #FFFF;
+font-size: 16px;
+
+--font-medium: 500;
+--font-Bold: 700;
+--font-Black: 900;
+
+}
+
+.fmedium{
+    font-weight: var(--font-medium);
+    color: var(--Desaturated-blue);
+}
+.fbold{
+    font-weight: var(--font-Bold);
+}
+.fblack{
+    font-size: 25px;
+    font-weight: var(--font-Black);
+    color: var(--Dark-blue);
+}
+
+.body{
+    background-color: black;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;  
+    background-color: var(--Very-pale-blue);   
+}
+
+.principal_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.card{
+    background-color: var(--White);
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.img_card img {
+    width: 100%;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-description{
+    padding: 10px;
+}
+
+.text-description{
+    width: 315px;
+    text-align: center;
+    padding: 10px;
+}
+
+.anual_plan{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-proceed-to-Pay {
+    background-color: var(--Bright-blue);
+    width: 80%;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-proceed-to-Pay a{
+    text-decoration: none;
+    color: var(--White);
+}
+
+.cancel-order {
+    width: 80%;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+.cancel-order a{
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+.change a {
+    color: var(--Bright-blue);
+}
+
